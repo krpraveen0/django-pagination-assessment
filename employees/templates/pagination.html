@@ -1,0 +1,24 @@
+{% load paginator_tags %}
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    {% get_proper_elided_page_range paginator page_obj.number  as page_range %}
+        <!-- here -->
+      {% for page_num in page_range %}
+        {% if page_obj.number == page_num %}
+        <li class="active page-item">
+          <span class="page-link">{{ page_num }}</span>
+        </li>
+        {% else %}
+        {% if page_num == paginator.ELLIPSIS %}
+        <li class="page-item">
+          <span class="page-link">{{ paginator.ELLIPSIS }}</span>
+        </li>
+        {% else %}
+        <li class="page-item">
+          <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
+        </li>
+        {% endif %}
+        {% endif %}
+      {% endfor %}
+  </ul>
+</nav>
