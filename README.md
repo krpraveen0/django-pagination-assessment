@@ -35,12 +35,12 @@
 
     Navigate to [http://127.0.0.1:8000/employees/](http://127.0.0.1:8000/employees/)
 
-    Navigate to [http://127.0.0.1:8000/employees/](http://127.0.0.1:8000/admin/)
-    username : Test
-    password : Test@1234
-    Now you can update CustomPaginate columns ie
-        around: 
-        bondaries :
+    Navigate to [http://127.0.0.1:8000/employees/](http://127.0.0.1:8000/admin/)\
+    username : Test\
+    password : Test@1234\
+    Now you can update CustomPaginate columns ie\
+        around:\ 
+        bondaries :\
     to see different outputs 
 
 
